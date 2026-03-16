@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{- $postType := .Params.type -}}
+<article class="h-entry{{ if eq $postType "image" }} e-image{{ else if eq $postType "quote" }} e-quote{{ else if eq $postType "aside" }} e-aside{{ else if eq $postType "link" }} e-link{{ end }}">
+
+  {{ if not $postType }}
+  <h1 class="p-name">{{ .Title }}</h1>
+  {{ end }}
+
+  <div class="e-content">
+    {{ .Content }}
+  </div>
+
+  <p class="dt-published">{{ .Date.Format "2/1/2006" }}</p>
+
+  <p class="comentario">O blog não tem comentários, mas podemos falar deste post <a href="mailto:rodrigo@ghed.in?subject={{ .Title }}">por e-mail</a>.</p>
+
+  <p>&laquo;&nbsp;<a href="{{ "/blog" | relURL }}">Voltar ao índice do blog</a></p>
+</article>
+{{ end }}

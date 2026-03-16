@@ -1,0 +1,10 @@
+---
+title: "\"No que está pensando, Amy?\" A pergunta…"
+date: 2015-07-26T12:00:00-03:00
+categories: [citacoes]
+type: quote
+slug: no-que-esta-pensando-amy
+---
+>"No que está pensando, Amy?" A pergunta que eu fiz com maior frequência durante nosso casamento, embora não em voz alta, não à pessoa que poderia responder. Suponho que essas indagações pairem como nuvens negras sobre todos os casamentos: "No que você está pensando? Como está se sentindo? Quem é você? O que fizemos um ao outro? O que iremos fazer?"
+
+— Gillian Flynn, _Garota exemplar_.

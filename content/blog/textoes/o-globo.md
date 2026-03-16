@@ -1,0 +1,9 @@
+---
+title: "“Aplicativo usado por Moro e Dallagnol, Telegram é alvo de críticas e de cerco do governo na Rússia”, n'O Globo"
+date: 2019-06-11T13:00:00-03:00
+type: link
+slug: o-globo
+---
+[Aplicativo usado por Moro e Dallagnol, Telegram é alvo de críticas e de cerco do governo na Rússia](https://oglobo.globo.com/brasil/aplicativo-usado-por-moro-dallagnol-telegram-alvo-de-criticas-de-cerco-do-governo-na-russia-23730732)
+
+Fui fonte na matéria do Bernardo Mello e Guilherme Caetano, n'_O Globo_, a respeito do Telegram, aplicativo usado por Sérgio Moro e Deltan Dallagnol nas conversas irregulares que mantinham durante a operação Lata Jato. [Sem paywall](https://12ft.io/proxy?q=https://oglobo.globo.com/brasil/aplicativo-usado-por-moro-dallagnol-telegram-alvo-de-criticas-de-cerco-do-governo-na-russia-23730732).

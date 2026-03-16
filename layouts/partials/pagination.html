@@ -1,0 +1,10 @@
+{{ if gt .TotalPages 1 }}
+<nav class="nav-blogs">
+  {{ if .HasPrev }}
+    <a class="nav-blogs-novos" href="{{ .Prev.URL }}">&laquo;&nbsp;Novos</a>
+  {{ end }}
+  {{ if .HasNext }}
+    <a class="nav-blogs-antigos" href="{{ .Next.URL }}">Antigos&nbsp;&raquo;</a>
+  {{ end }}
+</nav>
+{{ end }}

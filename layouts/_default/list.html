@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "blog-filters.html" . }}
+
+{{ $paginator := .Paginate .RegularPages }}
+
+{{ range $paginator.Pages }}
+{{ partial "post-card.html" . }}
+{{ end }}
+{{ end }}
+
+{{ define "after-main" }}
+{{ partial "pagination.html" (.Paginate .RegularPages) }}
+{{ end }}

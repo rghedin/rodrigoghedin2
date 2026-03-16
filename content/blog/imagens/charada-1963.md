@@ -1,0 +1,10 @@
+---
+title: "Charada"
+date: 2022-05-14T16:55:00-03:00
+categories: [imagens]
+type: image
+slug: charada-1963
+---
+![Quadro do filme “Charada”. Audrey Hepburn e Cary Grant no banco de trás de um carro, ele de casaca clara, camisa e gravata, olhando para baixo; ela com um casaco amarelo forte e calçando luvas pretas, mão esquerda apoiada na têmpora, olhando para ele.](/assets/2022/charada-1963.jpg)
+
+*Charada* (Stanley Donen, 1963).

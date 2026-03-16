@@ -1,0 +1,9 @@
+---
+title: "Duas décadas nesta indústria vital e ainda estou descobrindo…"
+date: 2025-02-15T09:33:00-03:00
+categories: [notinhas]
+type: aside
+slug: samp-elemento-html
+excerpt: "Duas décadas nesta indústria vital e ainda estou descobrindo coisas “novas” do HTML. A de hoje foi o elemento <samp>, que “é usado para encapsular texto em linha que representa a saída de amostra (ou…"
+---
+Duas décadas nesta indústria vital e ainda estou descobrindo coisas “novas” do HTML. A de hoje foi [o elemento `<samp>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp), “usado para encapsular texto em linha que representa a saída de amostra (ou citação) de um programa de computador”, ou seja, o tipo de coisa que seria (será!) muito útil no Manual do Usuário.

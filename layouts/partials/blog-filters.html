@@ -1,0 +1,8 @@
+{{- $currentPage := . -}}
+<ul class="filtros-blog">
+  <li{{ if eq $currentPage.RelPermalink "/blog/" }} class="filtro-foco"{{ end }}><a href="{{ "/blog" | relURL }}">Blog</a></li>
+  <li{{ if hasPrefix $currentPage.RelPermalink "/blog/textoes" }} class="filtro-foco"{{ end }}><a href="{{ "/blog/textoes" | relURL }}">Textões</a></li>
+  <li{{ if hasPrefix $currentPage.RelPermalink "/blog/notinhas" }} class="filtro-foco"{{ end }}><a href="{{ "/blog/notinhas" | relURL }}">Notinhas</a></li>
+  <li{{ if hasPrefix $currentPage.RelPermalink "/blog/citacoes" }} class="filtro-foco"{{ end }}><a href="{{ "/blog/citacoes" | relURL }}">Citações</a></li>
+  <li{{ if hasPrefix $currentPage.RelPermalink "/blog/imagens" }} class="filtro-foco"{{ end }}><a href="{{ "/blog/imagens" | relURL }}">Imagens</a></li>
+</ul>

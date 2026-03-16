@@ -1,0 +1,17 @@
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+
+{{- $isBlog := hasPrefix .RelPermalink "/blog" -}}
+<main{{ if $isBlog }} class="h-feed"{{ end }}>
+
+    {{ block "main" . }}{{ end }}
+
+</main>
+
+{{ block "after-main" . }}{{ end }}
+
+{{ partial "footer.html" . }}
+
+</body>
+</html>

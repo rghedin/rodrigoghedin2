@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title | truncate 45 "…" }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 120 "…" }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+    <meta name="fediverse:creator" content="@manualdousuario@mastodon.social" />
+    {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
+    {{ end -}}
+    {{ if or (eq .Layout "default") (eq .Layout "page") (eq .Type "page") -}}
+    <meta name="robots" content="index,follow">
+    {{- else -}}
+    <meta name="robots" content="noindex,follow">
+    {{- end }}
+    <link rel="stylesheet" href="{{ "/style.css" | relURL }}" media="all"/>
+</head>
+
+{{- $isBlog := hasPrefix .RelPermalink "/blog" -}}
+<body{{ if $isBlog }} class="layout-blog"{{ end }}>

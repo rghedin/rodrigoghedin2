@@ -1,0 +1,44 @@
+baseURL = "https://rodrigo.ghed.in"
+languageCode = "pt-BR"
+title = "rodrigo.ghed.in"
+description = "O jardim digital de Rodrigo Ghedin"
+author = "Rodrigo Ghedin"
+timezone = "America/Sao_Paulo"
+
+# Paginação
+paginate     = 10
+paginatePath = "page"
+
+# Permalink para posts do blog
+[permalinks]
+  blog = "/blog/:slug"
+
+# Markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+# Taxonomias
+[taxonomies]
+  category = "categories"
+
+# Menu de navegação (não usado diretamente, mas útil)
+[params]
+  feedURL = "/feed.xml"
+  mastodon = "https://mastodon.social/@manualdousuario"
+  email = "rodrigo@ghed.in"
+  lerama = "https://lerama.pcdomanual.com/"
+
+# Outputs - RSS feed
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+# Configuração do feed RSS
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
