@@ -1,7 +1,17 @@
 {{ define "main" }}
 {{ partial "blog-filters.html" . }}
 
-{{ $paginator := .Paginate .RegularPages }}
+{{ $paginator := "" }}
+{{ if .Params.filterCategory }}
+  {{/* Página de filtro: busca posts pelo campo categories */}}
+  {{ $cat := .Params.filterCategory }}
+  {{ $posts := where .Site.RegularPages "Section" "blog" }}
+  {{ $filtered := where $posts ".Params.categories" "intersect" (slice $cat) }}
+  {{ $paginator = .Paginate $filtered }}
+{{ else }}
+  {{/* Página /blog/: todos os posts */}}
+  {{ $paginator = .Paginate .RegularPagesRecursive }}
+{{ end }}
 
 {{ range $paginator.Pages }}
 {{ partial "post-card.html" . }}
@@ -9,5 +19,12 @@
 {{ end }}
 
 {{ define "after-main" }}
-{{ partial "pagination.html" (.Paginate .RegularPages) }}
+{{ if .Params.filterCategory }}
+  {{ $cat := .Params.filterCategory }}
+  {{ $posts := where .Site.RegularPages "Section" "blog" }}
+  {{ $filtered := where $posts ".Params.categories" "intersect" (slice $cat) }}
+  {{ partial "pagination.html" (.Paginate $filtered) }}
+{{ else }}
+  {{ partial "pagination.html" (.Paginate .RegularPagesRecursive) }}
+{{ end }}
 {{ end }}
