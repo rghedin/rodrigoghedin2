@@ -6,7 +6,7 @@ author = "Rodrigo Ghedin"
 timezone = "America/Sao_Paulo"
 
 # Paginação
-paginate     = 10
+paginate     = 11
 paginatePath = "page"
 
 # Permalink para posts do blog
